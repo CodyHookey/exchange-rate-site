@@ -1,6 +1,7 @@
 {
   "name": "exchange-rate-site",
   "version": "0.1.0",
+  "homepage": "https://codyhookey.github.io/exchange-rate-site/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -16,6 +17,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build",
+    "postbuild": "cp build/index.html build/404.html",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
