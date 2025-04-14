@@ -9,14 +9,23 @@ const Layout = (props) => {
       <div className="container py-3">{props.children}</div>
       <footer className="p-3 bg-light">
         <div className="mb-2">
-          <a className="badge badge-dark" href="#" target="_blank">
+          <a
+            className="badge badge-dark"
+            href="https://www.altcademy.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             Github
           </a>
         </div>
         <div>
           <span className="mr-3 text-secondary">
             Built by{" "}
-            <a href="https://www.altcademy.com" target="_blank">
+            <a
+              href="https://www.altcademy.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Altcademy
             </a>{" "}
             with ☕ and 💜
